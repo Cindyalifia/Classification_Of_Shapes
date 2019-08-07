@@ -7,7 +7,7 @@
 - matplotlib version 2.2.0
 
 ### Introduction
-In this project, I make some classification to classify shape there are circles, squares, and triangles. I use keras library and some other library. In this project I also make some prediction after I train my program on file 'train.py', and the result to predict new image on file 'detect.py'. 
+In this project, I make some classification to classify shapes there are circles, squares, or triangles. I use Keras library and some other library. In this project I also make some prediction after I train my program on file 'train.py', and the result to predict new image on file 'detect.py'. 
 
 ### How to run 
 #### Training
