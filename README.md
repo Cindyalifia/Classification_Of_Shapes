@@ -4,18 +4,35 @@
 
 ### Tools that needed to be installed are :
 - Keras version 2.2.4
-- matplotlib 
+- matplotlib version 2.2.0
 
 ### Introduction
-In this project, I make some classification to classify shape there are circle, square, and triangle. I use keras library and some other library and there are something you have to do before running the program.
+In this project, I make some classification to classify shape there are circles, squares, and triangles. I use keras library and some other library. In this project I also make some prediction after I train my program on file 'train.py', and the result to predict new image on file 'detect.py'. 
+
+### How to run 
+#### Training
+
+```
+$ python train.py
+```
+
+#### Detection
+You just only need to type this on your terminal :  
+
+```
+$ python detect.py --images directory/image.png
+```
 
 ### Installation 
+There are something you have to do before running the program. You have to install all library we needed, if you haven't install before.
+
 - First step, you have to install keras on your pc   
     you can watch keras installation on https://keras.io/#installation
 
 - Second step, you have to install matplotlib on your pc   
-    $ pip install matplotlib
-  
+```
+$ pip install matplotlib
+``` 
 
 ### Dataset
 In this project, I use shapes for dataset which is circle, square, and triangle. I've got this data from https://www.kaggle.com/cactus3/basicshapes. There are 300 image containing 100 pictures each of circle, rectangle, and triangle. I split data for training set 67% and for test set 33%. 

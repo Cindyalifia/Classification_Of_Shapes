@@ -1,6 +1,3 @@
-
-from keras.models import load_model
-import keras
 from keras.models import Sequential
 from keras.layers import Convolution2D
 from keras.layers import MaxPooling2D
@@ -50,6 +47,7 @@ history = classifier.fit_generator(training_set,
                                    validation_data=test_set,
                                    validation_steps=len(test_set.filenames))
 classifier.save('my_model.h5')  # creates a HDF5 file 'my_model.h5'
+print(training_set.class_indices)
 
 # Plot training & validation accuracy values
 plt.plot(history.history['acc'])
@@ -68,3 +66,4 @@ plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
 plt.show()
+
