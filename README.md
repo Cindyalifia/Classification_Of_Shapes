@@ -37,7 +37,7 @@ $ pip install matplotlib
 ### Dataset
 In this project, I use shapes for dataset which is circle, square, and triangle. I've got this data from https://www.kaggle.com/cactus3/basicshapes. There are 300 image containing 100 pictures each of circle, rectangle, and triangle. I split data for training set 67% and for test set 33%. 
 
-### Result 
+### Result of training
 After I train my program, I got the accuracy is 92.04% using 20 epoch.
 
 ![](./SS/train.png)
@@ -50,6 +50,17 @@ If we look closer to my image, we can see that the accuracy from my train is alm
 And the result for loss is :
 
 ![](./SS/model_loss.png)
+
+### Resutl of predict
+I predict my model, and the result for trying to predict square image is this:
+
+![](./SS/squares_predict.png)
+
+My program already classify square into square class. And then, when I try to predict triangle image is this:
+
+![](./SS/triangle_predict.png)
+
+And I can say that my model to classify shapes is work. 
 
 ### My Model Result
 I save my model on 'my_model.h5'.
